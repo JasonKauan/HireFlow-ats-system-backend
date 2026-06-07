@@ -1,13 +1,14 @@
 package com.hireflow.ats.model;
 
 
+import com.hireflow.ats.enums.ApplicationStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Data
 @Table(name = "applications")
 @Entity
-public class Aplication {
+public class Application {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,5 +26,5 @@ public class Aplication {
 
 
     @Column(nullable = false)
-    private String status;
+    private ApplicationStatus status;
 }

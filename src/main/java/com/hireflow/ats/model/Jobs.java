@@ -3,7 +3,6 @@ package com.hireflow.ats.model;
 import com.hireflow.ats.enums.JobStatus;
 import jakarta.persistence.*;
 import lombok.*;
-import com.hireflow.ats.model.Company.*;
 
 import java.math.BigDecimal;
 
