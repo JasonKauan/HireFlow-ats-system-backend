@@ -1,16 +1,14 @@
 package com.hireflow.ats.model;
 
 
+import com.hireflow.ats.enums.Role;
 import jakarta.persistence.*;
-import lombok.Data;
 import lombok.*;
 
 @Entity
 @Table(name = "users")
-@Getter@Setter
 @Data
 public class User {
-
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -25,6 +23,7 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+
     @Column(nullable = false)
-    private String role;
+    private Role role;
 }
