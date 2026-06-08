@@ -13,6 +13,11 @@ public class Resume {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
+    @OneToOne
+    @JoinColumn(name = "candidate_id", nullable = false)
+    private Candidate candidate;
+
     @Column(nullable = false)
     private String fileName;
 
