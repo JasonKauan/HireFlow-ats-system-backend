@@ -6,7 +6,6 @@ import lombok.*;
 @Data
 @Entity
 @Table(name = "companies")
-@Getter@Setter
 public class Company {
 
     @Id
